@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: hsl(234, 29%, 20%);
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up-card {
+  width: 65%;
+  height: 560px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign-up-card #desktop-icon {
+  height: 100%;
+}
+.sign-up-card .sign-up {
+  width: 45%;
+  margin: auto;
+}
+.sign-up-card .sign-up h1 {
+  font-size: 56px;
+}
+.sign-up-card .sign-up ul {
+  list-style-image: url("../images/icon-list.svg");
+  list-style-position: inside;
+}
+.sign-up-card .sign-up ul li {
+  margin: 10px 0;
+}
+.sign-up-card .sign-up h1,
+.sign-up-card .sign-up ul,
+.sign-up-card .sign-up form {
+  margin: 20px 0;
+}
+.sign-up-card .sign-up form {
+  display: flex;
+  flex-direction: column;
+}
+.sign-up-card .sign-up form label {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.sign-up-card .sign-up form label .label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.sign-up-card .sign-up form label #email-error {
+  font-weight: medium;
+  color: rgb(224, 58, 58);
+}
+.sign-up-card .sign-up form input {
+  height: 55px;
+  border-radius: 8px;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+.sign-up-card .sign-up form #email {
+  margin: 10px 0 20px 0;
+  padding-left: 20px;
+}
+.sign-up-card .sign-up form .input-error {
+  background-color: rgba(255, 0, 0, 0.082);
+  color: rgb(224, 58, 58);
+  border-color: rgb(224, 58, 58);
+}
+.sign-up-card .sign-up form .input-error:focus {
+  outline-color: rgb(224, 58, 58);
+}
+.sign-up-card .sign-up form #submit {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  scroll-behavior: smooth;
+  border: none;
+  transition-duration: 0.2s;
+}
+.sign-up-card .sign-up form #submit:hover {
+  background: linear-gradient(90deg, rgb(255, 82, 123) 0%, rgb(255, 106, 58) 100%);
+  box-shadow: 0px 20px 30px rgba(255, 82, 122, 0.397);
+  border: none;
+}
+
+.message-card {
+  width: 370px;
+  height: 425px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  padding: 40px 60px;
+}
+.message-card .card-header h1 {
+  font-size: 56px;
+  margin: 20px 0;
+}
+.message-card .card-footer #button {
+  width: 100%;
+  height: 55px;
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  margin-top: 45px;
+  font-weight: bold;
+  cursor: pointer;
+  scroll-behavior: smooth;
+  transition-duration: 0.2s;
+}
+.message-card .card-footer #button:hover {
+  background: linear-gradient(90deg, rgb(255, 82, 123) 0%, rgb(255, 106, 58) 100%);
+  box-shadow: 0px 20px 30px rgba(255, 82, 122, 0.397);
+  border: none;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-color: hsl(0, 0%, 100%);
+  }
+  .sign-up-card {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    overflow: scroll;
+  }
+  .sign-up-card img {
+    content: url("../images/illustration-sign-up-mobile.svg");
+    margin-bottom: 15px;
+  }
+  .sign-up-card .sign-up {
+    width: 97%;
+    height: 100%;
+  }
+  .sign-up-card .sign-up h1 {
+    font-size: 40px;
+  }
+  .sign-up-card .sign-up ul {
+    list-style-image: url("../images/icon-list.svg");
+    list-style-position: outside;
+  }
+  .sign-up-card .sign-up ul li {
+    margin: 10px 0 10px 27px;
+    line-height: 23px;
+  }
+  .sign-up-card .sign-up h1,
+  .sign-up-card .sign-up ul,
+  .sign-up-card .sign-up form {
+    margin: 28px 0;
+  }
+  .message-card {
+    width: 87%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .message-card .card-header h1 {
+    font-size: 40px;
+    margin: 26px 0;
+  }
+  .message-card .card-footer #button {
+    width: 100%;
+    height: 55px;
+    border-radius: 8px;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    transition-duration: 0.2s;
+  }
+  .message-card .card-footer #button:hover {
+    background: linear-gradient(90deg, rgb(255, 82, 123) 0%, rgb(255, 106, 58) 100%);
+    box-shadow: 0px 20px 30px rgba(255, 82, 122, 0.397);
+    border: none;
+  }
+}/*# sourceMappingURL=style.css.map */
